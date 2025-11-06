@@ -3,3 +3,4 @@ Handcrafted Haven Team 09 Group Project
 # Team Members
 - Carter Arnold
 - Jake Preciado
+- Frodo Pano 
