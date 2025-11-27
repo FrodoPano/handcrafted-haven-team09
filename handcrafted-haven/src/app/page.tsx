@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ProjectBoard from '@/components/ProjectBoard';
 
 export default function Home() {
   return (
@@ -36,6 +37,9 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      {/* Project Board Section */}
+      <ProjectBoard />
 
       {/* Features Section */}
       <section className="py-16 px-6">
