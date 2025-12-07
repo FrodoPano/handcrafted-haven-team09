@@ -4,6 +4,8 @@ import { useState } from 'react';
 import { Task } from '@/types/task';
 import TaskCard from './TaskCard';
 import { initialTasks } from '@/data/tasks';
+import { siteConfig } from '@/config/site';
+
 
 export default function ProjectBoard() {
   const [tasks, setTasks] = useState<Task[]>(initialTasks);
@@ -77,7 +79,7 @@ export default function ProjectBoard() {
             View our complete project board and contribute to the development:
           </p>
           <a
-            href="https://github.com/jakepreciado/handcrafted-haven-team09"
+            href="https://github.com/FrodoPano/handcrafted-haven-team09"  // Updated URL
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-6 py-3 font-serif text-lg font-semibold text-white rounded-lg transition-colors"
@@ -87,6 +89,54 @@ export default function ProjectBoard() {
           >
             Visit GitHub Repository
           </a>
+
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <a
+            href={siteConfig.github.projects}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-center p-3 rounded-lg font-serif transition-colors"
+            style={{ 
+              backgroundColor: '#b6a48c',
+              color: '#2b352c'
+            }}
+            onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#896c4a'}
+            onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#b6a48c'}
+          >
+            View Project Board
+          </a>
+          
+          <a
+            href={siteConfig.links.figma}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-center p-3 rounded-lg font-serif transition-colors"
+            style={{ 
+              backgroundColor: '#b6a48c',
+              color: '#2b352c'
+            }}
+            onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#896c4a'}
+            onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#b6a48c'}
+          >
+            View Figma Design
+          </a>
+          
+          <a
+            href={siteConfig.github.issues}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-center p-3 rounded-lg font-serif transition-colors"
+            style={{ 
+              backgroundColor: '#b6a48c',
+              color: '#2b352c'
+            }}
+            onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#896c4a'}
+            onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#b6a48c'}
+          >
+            Report Issues
+          </a>
+        </div>
+
         </div>
       </div>
     </section>

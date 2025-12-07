@@ -73,3 +73,9 @@ export const initialTasks: Task[] = [
     ]
   }
 ];
+
+export const siteConfig = {
+  githubUrl: "https://github.com/FrodoPano/handcrafted-haven-team09",
+  projectName: "Handcrafted Haven",
+  teamName: "Team 09",
+};
