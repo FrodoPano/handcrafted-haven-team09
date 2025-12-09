@@ -78,33 +78,31 @@ export default function ProjectBoard() {
           <p className="font-serif mb-4" style={{ color: '#695d47' }}>
             View our complete project board and contribute to the development:
           </p>
-          <a
-            href="https://github.com/FrodoPano/handcrafted-haven-team09"  // Updated URL
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-6 py-3 font-serif text-lg font-semibold text-white rounded-lg transition-colors"
-            style={{ backgroundColor: '#8e511b' }}
-            onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#695d47'}
-            onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#8e511b'}
+          // In ProjectBoard.tsx, update the GitHub link:
+          
+        <a
+          href={siteConfig.github.repository}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-6 py-3 font-serif text-lg font-semibold text-white rounded-lg transition-colors hover-bg-color"
+          style={{ backgroundColor: '#8e511b' }}
           >
             Visit GitHub Repository
-          </a>
+        </a>
 
-          <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
-          <a
-            href={siteConfig.github.projects}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-center p-3 rounded-lg font-serif transition-colors"
-            style={{ 
-              backgroundColor: '#b6a48c',
-              color: '#2b352c'
-            }}
-            onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#896c4a'}
-            onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#b6a48c'}
-          >
-            View Project Board
-          </a>
+
+        <a
+          href={siteConfig.github.projects}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-center p-3 rounded-lg font-serif transition-colors hover-bg-color"
+          style={{ 
+            backgroundColor: '#b6a48c',
+            color: '#2b352c'
+          }}
+        >
+          View Project Board
+        </a>
           
           <a
             href={siteConfig.links.figma}
@@ -130,12 +128,9 @@ export default function ProjectBoard() {
               backgroundColor: '#b6a48c',
               color: '#2b352c'
             }}
-            onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#896c4a'}
-            onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#b6a48c'}
           >
             Report Issues
           </a>
-        </div>
 
         </div>
       </div>

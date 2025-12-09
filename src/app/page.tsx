@@ -28,10 +28,8 @@ export default function Home() {
           </p>
           <Link 
             href="/browse" 
-            className="inline-block px-8 py-3 font-serif text-lg font-semibold text-white rounded-lg transition-colors"
+            className="inline-block px-8 py-3 font-serif text-lg font-semibold text-white rounded-lg transition-colors hover-bg-color"
             style={{ backgroundColor: '#8e511b' }}
-            onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#695d47'}
-            onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#8e511b'}
           >
             Explore Collection
           </Link>
@@ -48,15 +46,15 @@ export default function Home() {
             Why Choose Handcrafted Haven?
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center p-6 rounded-lg" style={{ backgroundColor: '#f8f5f0' }}>
+            <div className="text-center p-6 rounded-lg feature-card">
               <h4 className="text-xl font-serif font-semibold mb-4" style={{ color: '#8e511b' }}>Unique Items</h4>
               <p className="font-serif" style={{ color: '#695d47' }}>Discover one-of-a-kind pieces made with passion and skill</p>
             </div>
-            <div className="text-center p-6 rounded-lg" style={{ backgroundColor: '#f8f5f0' }}>
+            <div className="text-center p-6 rounded-lg feature-card">
               <h4 className="text-xl font-serif font-semibold mb-4" style={{ color: '#8e511b' }}>Support Artisans</h4>
               <p className="font-serif" style={{ color: '#695d47' }}>Directly support independent makers and their craft</p>
             </div>
-            <div className="text-center p-6 rounded-lg" style={{ backgroundColor: '#f8f5f0' }}>
+            <div className="text-center p-6 rounded-lg feature-card">
               <h4 className="text-xl font-serif font-semibold mb-4" style={{ color: '#8e511b' }}>Quality Craftsmanship</h4>
               <p className="font-serif" style={{ color: '#695d47' }}>Each item is carefully handmade with attention to detail</p>
             </div>

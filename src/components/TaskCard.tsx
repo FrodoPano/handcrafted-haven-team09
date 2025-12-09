@@ -32,7 +32,7 @@ export default function TaskCard({ task, onStatusChange, onChecklistToggle }: Ta
         <select
           value={task.status}
           onChange={(e) => onStatusChange(task.id, e.target.value as Task['status'])}
-          className="text-sm rounded px-2 py-1"
+          className="text-sm rounded px-2 py-1 custom-select"
           style={{ backgroundColor: '#d3c6b4', color: '#2b352c', border: '1px solid #b6a48c' }}
         >
           <option value="todo">To Do</option>
